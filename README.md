@@ -13,15 +13,15 @@ Automation: TCL provides powerful scripting capabilities that allow automation o
 
 # Agenda
 
-- Unit 1 :  Introduction, Toolbox usage scenarios
+- [Unit 1](#Unit-1) :  Introduction, Toolbox usage scenarios
 
-- Unit 2 : Sub-Task Two - From CSV to format[1] and SDC - Variable Creation,  Sub-Task Two - From CSV to format[1] and SDC - Processing constraints, CSV.
+- [Unit 2](#Unit-2) : Sub-Task Two - From CSV to format[1] and SDC - Variable Creation,  Sub-Task Two - From CSV to format[1] and SDC - Processing constraints, CSV.
 
-- Unit 3 : Sub-Task Two - From CSV to format[1] and SDC - Processing clock constraints,  Sub-Task Two - From CSV to format[1] and SDC - Processing input constraints
+- [Unit 3](#Unit-3)  : Sub-Task Two - From CSV to format[1] and SDC - Processing clock constraints,  Sub-Task Two - From CSV to format[1] and SDC - Processing input constraints
 
-- Unit 4 : Full script for download and Conclusion, Introduction to Yosys synthesis tool usage, Hierarchy check and error handling script creation for Yosys
+- [Unit 4](#Unit-4)  : Full script for download and Conclusion, Introduction to Yosys synthesis tool usage, Hierarchy check and error handling script creation for Yosys
 
-- Unit 5 : Synthesis main file scripting and output file editing, World of 'Procs', read_sdc proc - interpret clock generation constraints, read_sdc proc - interpret IO delays and transition constraints, Process bussed ports and configuration file creation, Quality of results (QOR) generation algorithm
+- [Unit 5](#Unit-5) : Synthesis main file scripting and output file editing, World of 'Procs', read_sdc proc - interpret clock generation constraints, read_sdc proc - interpret IO delays and transition constraints, Process bussed ports and configuration file creation, Quality of results (QOR) generation algorithm
 
 
 # Open Source Tools
@@ -34,81 +34,78 @@ Automation: TCL provides powerful scripting capabilities that allow automation o
 
 ** cowsay ** is a program that generates ASCII art pictures of a cow with a message. It can also generate pictures using pre-made images of other animals, such as Tux the Penguin, the Linux mascot.
 
-> Install COWSAY 
+> Install COWSAY
+
 ``` apt-get install cowsay -y ```
 
-# Day-wise Workshop Progress
 
-- [Day 1 5th July 2023](#Day-1-5th-July-2023)
-- [Day 2 6th July 2023](#Day-2-6th-July-2023)
-- [Day 3 7th July 2023](#Day-3-7th-July-2023)
-- [Day 4 8th July 2023](#Day-4-8th-July-2023)
-- [Day 5 9th July 2023](#Day-5-9th-July-2023)
+# Unit 1
 
-# Day 1  5th July 2023
+### Tasks :
+- Make a Bash Script and Execute it.
+- By accepting CML arguments, Invoke TCL Command
+- Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)
 
-# Tasks of the Day :
+### Bash Script for TCL Automation :
 
-    • Create & Execute the Bash Script
-    • Invoke TCL Command by accepting command line arguments
-    • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)
+```
+#!/bin/tcsh -f
+echo
+if ($#argv != 1) then
+	cowsay -f eyes "INFO: Please provide only a proper csv file" 
+echo 
+echo "		TCL Command Created By Pritesh - Ps 	"
+echo
+exit 1
+endif
+if (! -f $argv[1] || $argv[1] == "-help") then
+	if ($argv[1] != "-help") then
+		cowsay -f eyes "Error: Cannot find csv file $argv[1] in Directory. Exiting the Flow..."
+		echo 
+		echo "		TCL Command Created By Pritesh - Ps 	"
+		echo
+		exit 1
+	else
+		echo USAGE: ./psynth \<csv file\>
+		echo
+		echo \<csv file\> ............. consist of 2 columns, below keywords being in 1st column and its case sensitive.
+		echo \<Design Name\> .......... Name of top level module
+		echo \<Output Directory\> ..... All generated reports is stored at this path
+		echo \<Netlist Directory\> .... RTL netlist is at this path
+		echo \<Early Library Path\> ... Path for early library cell, used in STA
+		echo \<Late Library Path\> .... Path for Late library cell, used in STA
+		echo \<Constraints file\> ..... Path for csv file having constraints, used in STA
+		echo
+		exit 1
+	endif
+else
+	cowsay -f tux " Processing with $argv[1] ...."
+	echo 
+	echo "	TCL Command Created By Pritesh - Ps 	"
+	echo
+	tclsh psynth.tcl $argv[1]   
+exit 1 
+endif
 
-# Bash Script Input to Designed TCL Automation :
-
-
-    #!/bin/tcsh -f
-    
-    echo "\n\n\n\n\t\t\t\t\t\tSYNTHIA\n\n"
-    
-    echo "\t\tAn automation created by Akash Ambekar for the Synthesis using TCL Scripting"
-    
-    echo "\t\t\t\tDuring the 5-Days Workshop entiled as :"
-    
-    echo "\tTCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis"
-    
-    echo "\t\t\torganized By: VLSI System Design Corp. Pvt. Ltd."
-    
-    echo
-    
-    echo 
-    
-    echo
-    
-    if ($#argv != 1) then
-    
-        echo "SYNTHIA Info: Please provide a proper the csv file" exit 1
-        
-    endif
-    
-    if (!-f $argv[1]) then
-    
-        echo "SYNTHIA Error: Cannot find csv file $argv[1] in Directory. Exiting the Flow..."
-        
-        exit 1
-        
-    else
-    
-        tclsh synthia.tcl $argv[1]
-        
-    endif
+```
 
 # Results : 
 
 Case 1) Normal Command Line Argument Passing
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/b1be5101-3f8d-476d-8156-144e051716a4)
+![image]()
 
 Case 2) No Command Line Argument
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/d22920ec-11b0-4335-99c2-320b56c3575d)
+![image]()
 
 Case 3) Multiple Command Line Arguments
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/7f4373c8-3e55-4243-bc12-c193d8d39695)
+![image]()
 
 Case 4) Command Line Argument Doesn't Exist
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/566fea5d-3cd7-4902-af2a-03e406768235)
+![image]()
 
 
 # Day 2 6th July 2023
