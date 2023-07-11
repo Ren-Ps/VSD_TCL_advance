@@ -248,4 +248,4 @@ Which accepts user input in the form of RTL Verilog Code files and library direc
 **Mr. Kunal Ghosh, Co-Founder, VSD Corp. Pvt. Ltd.** and
 **Geetima Kachari**
 
-*Note - backup of images and scripts may found in Imgs folder as zip file*
+> Note - backup of images* may found in Imgs folder as zip.
