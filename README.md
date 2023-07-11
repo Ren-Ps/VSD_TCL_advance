@@ -1,8 +1,4 @@
-# VSD_TCL_advance
-TCL is a scripting language commonly used in various domains, including software development, system administration, and electronic design automation (EDA). .
-
-
-# TCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis
+# TCL : Advanced Scripting Techniques in Design and Synthesis
 
 - TCL (Tool Command Language) is a scripting language commonly used in the VLSI (Very Large Scale Integration) industry for various tasks related to electronic design automation (EDA) tools. why TCL is important in the VLSI industry:
 Automation: TCL provides powerful scripting capabilities that allow automation of repetitive tasks in the VLSI design flow. It enables engineers to write scripts to perform complex operations, such as running simulations, generating test vectors, modifying designs, and analyzing results. This automation helps improve productivity and efficiency in the VLSI design process.
