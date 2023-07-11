@@ -89,7 +89,7 @@ endif
 
 ```
 
-### * Results : *
+### _ Results : _
 
 - Case 1) Normal CLI Argument Passing
 
@@ -118,7 +118,7 @@ endif
 - Checking if provided directories exist at respective locations, display an error if not found.....
 - Convert the inputs into a format that can be passed to Yosys Synthesis Tool
 
-### * Results : *
+### _ Results : _
 
 - Passing Inputs Path from .csv file to the Scripts :
 
@@ -144,7 +144,7 @@ endif
 - Take care of the bus port to create SDC file
 - Verify the generated .sdc file
 
-### * Results : *
+### _ Results : _
 
 - Terminal Log
 
