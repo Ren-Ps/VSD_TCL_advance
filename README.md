@@ -107,7 +107,7 @@ Case 4) CLI Argument Doesn't Exist
 
 ![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-4_csv_missing.png)
 
-case 5) CLI Argument Usage Help
+Case 5) CLI Argument Usage Help
 
 ![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-2_usage_help.png)
 
@@ -122,25 +122,29 @@ case 5) CLI Argument Usage Help
 
 1) Passing Inputs Path from .csv file to the Scripts :
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/2-1_passing_inputs.png)
 
 2) Checking the directories for given input path exists at respective locations or not :
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/2-2_directory_check.png)
 
-3) Display an Error if the directory is not found at given location :
+3) Display an Error if the directory file is not found at given location :
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/2-3_directory_file_missing.png)
 
-# Day 3 7th July 2023
+4) Display Error if directory folder is not found and Make it
 
-# Tasks of the Day :
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/2-4_directory_folder_missing_nd_created.png)
 
-    • Read the Clock, Input & Output Constraints from the file and create Synopsys Design Constraints (SDC) Format .sdc file
-    • Take care of the bus port to create SDC file
-    • Verify the generated .sdc file
 
-# Results 
+# Unit 3
+
+### Tasks
+- Read the Clock, Input & Output Constraints from the file and create Synopsys Design Constraints (SDC) Format .sdc file
+- Take care of the bus port to create SDC file
+- Verify the generated .sdc file
+
+### Results 
 
 1) Terminal Log
 
