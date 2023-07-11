@@ -4,28 +4,35 @@ TCL is a scripting language commonly used in various domains, including software
 
 # TCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis
 
-TCL scripting plays a crucial role in the field of VLSI design and verification, making it an indispensable tool for semiconductor engineers. VLSI projects involve complex tasks such as chip design, simulation, verification, and manufacturing, and TCL scripting provides an efficient and flexible way to automate these processes. With TCL, engineers can write scripts to automate design tasks, perform simulations, analyze data, and generate reports, significantly reducing the time and effort required for repetitive tasks. TCL also offers excellent integration capabilities, allowing seamless interaction with other EDA tools and languages. Moreover, TCL scripting provides a high level of control and customization, enabling engineers to create complex workflows and implement design methodologies specific to their requirements. Overall, TCL scripting empowers VLSI engineers to enhance productivity, streamline workflows, and accelerate the development and verification of advanced integrated circuits.
+- TCL (Tool Command Language) is a scripting language commonly used in the VLSI (Very Large Scale Integration) industry for various tasks related to electronic design automation (EDA) tools. why TCL is important in the VLSI industry:
+Automation: TCL provides powerful scripting capabilities that allow automation of repetitive tasks in the VLSI design flow. It enables engineers to write scripts to perform complex operations, such as running simulations, generating test vectors, modifying designs, and analyzing results. This automation helps improve productivity and efficiency in the VLSI design process.
 
-- [Workshop Details & Agenda](#Workshop-Details-&-Agenda)
-- [Day-wise Workshop Progress](#Day-wise-Workshop-Progress)
-- [Quality of Results (QoR)](#Quality-of-Results-(QoR))
-- [Conclusion](#Conclusion)
-- [Acknowledgements](#Acknowledgements)
-  
-# Workshop Details & Agenda
+- EDA Tool Integration: TCL serves as a bridge between different EDA tools used in the VLSI design flow. It provides a standardized scripting language that can control and interact with various tools, such as synthesis, place and route, timing analysis, and layout tools. TCL scripts can automate the transfer of data between different tools, ensuring smooth integration and efficient collaboration among different stages of the design process.
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/97e1264e-31a7-4539-a21b-639e3dd31e13)
+- Customization and Extension: TCL allows engineers to customize and extend the functionalities of EDA tools. Through TCL scripting, designers can create their own commands, procedures, and functions to tailor the EDA tools according to their specific requirements. This flexibility empowers designers to optimize tool flows, add new features, and adapt tools to unique design methodologies.
 
-VLSI System Design Corp. Pvt. Ltd. had proposed this 5 days workshop entitled as "TCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis
-" from 5th July 2023 to 9the July 2023 with the guidance of Mr. Kunal Ghosh, Co-Founder, VSD Corp. Pvt. Ltd. and Ms. Geetima Kachari who had been working as the Teaching Assistant throughout the entire workshop. The agenda for the workshop is as follows :
+- Design Verification and Testing: TCL is extensively used for design verification and testing purposes. Engineers can write TCL scripts to automate testbench generation, run simulations, analyze waveforms, and perform coverage analysis. It enables efficient verification of VLSI designs and helps identify and debug issues early in the design cycle.
 
-Day 1 (5th July 2023) : Serving as the foundation, introduction to the core concepts and tasks of TCL. 
+- Design Data Manipulation: TCL provides powerful data manipulation capabilities, allowing designers to process and manipulate design data efficiently. It can parse and extract information from design files, perform calculations, generate reports, and automate design-related tasks. TCL's flexible string handling and file processing capabilities make it a valuable tool for data analysis and manipulation in the VLSI industry.
 
-Days 2 & 3 (6th & 7th July 2023): Immersing in the art of variable creation and processing constraints. 
+# Agenda
 
-Day 4 (8th July 2023) : Introduction to Yosys synthesis tool, understanding memory module RTL descriptions, and mastering gate level netlist descriptions.
+- Unit 1 :  Introduction, Toolbox usage scenarios
 
-Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to precise WNS and FEP analysis.
+- Unit 2 : Sub-Task Two - From CSV to format[1] and SDC - Variable Creation,  Sub-Task Two - From CSV to format[1] and SDC - Processing constraints, CSV.
+
+- Unit 3 : Sub-Task Two - From CSV to format[1] and SDC - Processing clock constraints,  Sub-Task Two - From CSV to format[1] and SDC - Processing input constraints
+
+- Unit 4 : Full script for download and Conclusion, Introduction to Yosys synthesis tool usage, Hierarchy check and error handling script creation for Yosys
+
+- Unit 5 : Synthesis main file scripting and output file editing, World of 'Procs', read_sdc proc - interpret clock generation constraints, read_sdc proc - interpret IO delays and transition constraints, Process bussed ports and configuration file creation, Quality of results (QOR) generation algorithm
+
+
+# Open Source Tools
+- Yosys
+- OpenTimer
+- TCL development suite
+- Libraries (associated with TCL)
 
 # Day-wise Workshop Progress
 
