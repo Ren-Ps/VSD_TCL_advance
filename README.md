@@ -30,6 +30,13 @@ Automation: TCL provides powerful scripting capabilities that allow automation o
 - TCL development suite
 - Libraries (associated with TCL)
 
+## Pre-request
+
+"cowsay" is a program that generates ASCII art pictures of a cow with a message. It can also generate pictures using pre-made images of other animals, such as Tux the Penguin, the Linux mascot.
+
+Install COWSAY 
+""" apt-get install cowsay -y ""
+
 # Day-wise Workshop Progress
 
 - [Day 1 5th July 2023](#Day-1-5th-July-2023)
