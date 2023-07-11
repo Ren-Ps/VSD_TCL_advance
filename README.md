@@ -45,7 +45,7 @@ TCL (Tool Command Language) is a scripting language commonly used in the VLSI (V
 
 ### Tasks :
 - Make a Bash Script and Execute it.
-- By accepting CML arguments, Invoke TCL Command
+- By accepting CLI arguments, Invoke TCL Command
 - Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)
 
 ### Bash Script for TCL Automation :
