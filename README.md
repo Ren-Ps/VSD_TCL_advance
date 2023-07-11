@@ -207,7 +207,7 @@ We have used 5 procs in our script:
 4) read_verilog.proc for reading the final synthesized RTL Netlist in openMSP43.final.synth.v file.
 5) read_sdc.proc for reading the sdc constraints.**
 
-``` **An Example of Proc *set_num_threads.proc*.** ```
+An Example of Proc *set_num_threads.proc*  
 
 ![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/5-6_procs_exmpl.png)
 
