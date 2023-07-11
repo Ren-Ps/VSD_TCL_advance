@@ -89,46 +89,48 @@ endif
 
 ```
 
-# Results : 
+### Results : 
 
-Case 1) Normal Command Line Argument Passing
+Case 1) Normal CLI Argument Passing
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-5_csv_accepted.png)
 
-Case 2) No Command Line Argument
+Case 2) No CLI Argument
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-1_without_csv.png)
 
-Case 3) Multiple Command Line Arguments
+Case 3) Multiple CLI Arguments
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-3_multiple_csv.png)
 
-Case 4) Command Line Argument Doesn't Exist
+Case 4) CLI Argument Doesn't Exist
 
-![image]()
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-4_csv_missing.png)
 
+case 5) CLI Argument Usage Help
 
-# Day 2 6th July 2023
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/1-2_usage_help.png)
 
-# Tasks of the Day :
+# Unit 2
 
-    • Auto Variable Creation
-    • Checking if provided directories exist at respective locations, display an error if not found.....
-    • Convert the inputs into a format that can be passed to Yosys Synthesis Tool
+### Tasks :
+- Auto Variable Creation
+- Checking if provided directories exist at respective locations, display an error if not found.....
+- Convert the inputs into a format that can be passed to Yosys Synthesis Tool
 
-# Results 
+### Results 
 
 1) Passing Inputs Path from .csv file to the Scripts :
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/f6be436e-d4fa-4877-9be8-e9c02362d873)
+![image]()
 
 2) Checking the directories for given input path exists at respective locations or not :
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/e26ff860-a5f2-431c-8b68-2a8d4a3271b8)
+![image]()
 
 3) Display an Error if the directory is not found at given location :
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/ad894d25-b412-4f3d-b09c-1cd070b1e5cd)
+![image]()
 
 # Day 3 7th July 2023
 
