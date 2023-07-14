@@ -27,9 +27,12 @@ TCL (Tool Command Language) is a scripting language commonly used in the VLSI (V
 
 # Open Source Tools
 - [Yosys](https://yosyshq.net/yosys/)
-- [OpenTimer](https://github.com/OpenTimer/OpenTimer)
+- [OpenTimer](https://github.com/skyformat99/OpenTimer-1.0.5)
 - [TCL development suite](https://www.tcl.tk/)
 - Libraries (associated with TCL)
+
+# Operating System
+- Ubunut 18.04
 
 ## Pre-request
 
