@@ -1,0 +1,40 @@
+#!/bin/tcsh -f
+echo
+if ($#argv != 1) then
+	cowsay -f eyes "INFO: Please provide only a proper csv file" 
+echo 
+echo "		TCL Command Created By Pritesh - Ps 	"
+echo
+exit 1
+endif
+
+if (! -f $argv[1] || $argv[1] == "-help") then
+	if ($argv[1] != "-help") then
+		cowsay -f eyes "Error: Cannot find csv file $argv[1] in Directory. Exiting the Flow..."
+		echo 
+		echo "		TCL Command Created By Pritesh - Ps 	"
+		echo
+		exit 1
+	else
+		echo USAGE: ./psynth \<csv file\>
+		echo
+		echo \<csv file\> ............. consist of 2 columns, below keywords being in 1st column and its case sensitive.
+		echo \<Design Name\> .......... Name of top level module
+		echo \<Output Directory\> ..... All generated reports is stored at this path
+		echo \<Netlist Directory\> .... RTL netlist is at this path
+		echo \<Early Library Path\> ... Path for early library cell, used in STA
+		echo \<Late Library Path\> .... Path for Late library cell, used in STA
+		echo \<Constraints file\> ..... Path for csv file having constraints, used in STA
+		echo
+		exit 1
+	endif
+else
+	cowsay -f tux " Processing with $argv[1] ...."
+	echo 
+	echo "	TCL Command Created By Pritesh - Ps 	"
+	echo
+	tclsh psynth.tcl $argv[1]   
+exit 1 
+endif
+
+
