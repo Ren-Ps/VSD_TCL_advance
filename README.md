@@ -230,13 +230,13 @@ An Example of Proc *set_num_threads.proc*
 
 - Static Timing Analysis
 
-![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/5-4_STA.png)
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/5-4_STA1.png)
 
 ### Quality of Results (QoR)
 
 The phrase "Quality of Results" is used in the evaluation of technical processes. Here, several factors such as setup violations, hold violations, worst negative slack, and run-time are used to determine the Quality of Results.
 
-![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/5-5_QoR.png)
+![image](https://github.com/Ren-Ps/VSD_TCL_advance/blob/main/Imgs/5-5_QoR1.png)
 
 # Conclusion 
 
