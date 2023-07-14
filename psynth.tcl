@@ -1170,7 +1170,7 @@ close $report_file
 
 
 
-puts "DesignName is \{$DesignName\}"
+puts "\nDesignName is \{$DesignName\}"
 
 puts "time_elapsed_in_sec is \{$time_elapsed_in_sec\}"
 
