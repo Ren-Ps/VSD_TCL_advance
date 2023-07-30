@@ -14,15 +14,15 @@ TCL (Tool Command Language) is a scripting language commonly used in the VLSI (V
 
 # Objectives:
 
-- [Unit 1](#unit-1) :  Introduction, Toolbox usage scenarios
+- [Unit 1](#unit-1) :  Introduction, Toolbox usage scenarios.
 
 - [Unit 2](#unit-2) : Sub-Task Two - From CSV to format[1] and SDC - Variable Creation,  Sub-Task Two - From CSV to format[1] and SDC - Processing constraints, CSV.
 
-- [Unit 3](#unit-3)  : Sub-Task Two - From CSV to format[1] and SDC - Processing clock constraints,  Sub-Task Two - From CSV to format[1] and SDC - Processing input constraints
+- [Unit 3](#unit-3)  : Sub-Task Two - From CSV to format[1] and SDC - Processing clock constraints,  Sub-Task Two - From CSV to format[1] and SDC - Processing input constraints.
 
-- [Unit 4](#unit-4)  : Full script for download and Conclusion, Introduction to Yosys synthesis tool usage, Hierarchy check and error handling script creation for Yosys
+- [Unit 4](#unit-4)  : Full script for download and Conclusion, Introduction to Yosys synthesis tool usage, Hierarchy check and error handling script creation for Yosys.
 
-- [Unit 5](#unit-5) : Synthesis main file scripting and output file editing, World of 'Procs', read_sdc proc - interpret clock generation constraints, read_sdc proc - interpret IO delays and transition constraints, Process bussed ports and configuration file creation, Quality of results (QOR) generation algorithm
+- [Unit 5](#unit-5) : Synthesis main file scripting and output file editing, World of 'Procs', read_sdc proc - interpret clock generation constraints, read_sdc proc - interpret IO delays and transition constraints, Process bussed ports and configuration file creation, Quality of results [QOR](#quality-of-results-qor) generation algorithm.
 
 
 # Open Source Tools
